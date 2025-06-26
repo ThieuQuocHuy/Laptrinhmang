@@ -3,12 +3,14 @@ using Shared.Models;
 namespace Shared.Interfaces
 {
     /// <summary>
+    /// /// <summary>
     /// Interface cung cấp các phương thức để tương tác với hệ thống đấu giá
     /// </summary>
     public interface IAuctionService
     {
         /// <summary>
         /// Lấy trạng thái của một phiên đấu giá
+        /// /// <summary>
         /// </summary>
         /// <param name="auctionId">ID của phiên đấu giá</param>
         /// <returns>Chuỗi mô tả trạng thái của phiên đấu giá</returns>
@@ -21,14 +23,16 @@ namespace Shared.Interfaces
         Task<List<Auction>> GetActiveAuctions();
 
         /// <summary>
+        /// /// <summary>
         /// Lấy danh sách tất cả các phiên đấu giá đã kết thúc
         /// </summary>
+        /// /// <summary>
         /// <returns>Danh sách các phiên đấu giá đã kết thúc</returns>
         Task<List<Auction>> GetInactiveAuctions();
 
         /// <summary>
-        ///  /// <summary>
         /// Đặt giá cho một phiên đấu giá
+        /// /// <summary>
         /// </summary>
         /// <param name="auctionId">ID của phiên đấu giá</param>
         /// <param name="userId">ID của người đặt giá</param>
@@ -37,6 +41,8 @@ namespace Shared.Interfaces
         Task<bool> PlaceBid(int auctionId, int userId, decimal amount);
 
         /// <summary>
+        /// /// <summary>
+        /// /// <summary>
         /// Lấy danh sách các lượt đặt giá của một phiên đấu giá
         /// </summary>
         /// <param name="auctionId">ID của phiên đấu giá</param>
@@ -44,15 +50,19 @@ namespace Shared.Interfaces
         Task<List<Bid>> GetAuctionBids(int auctionId);
 
         /// <summary>
+        /// <summary>
         /// Đăng ký người dùng mới
         /// </summary>
+        /// /// <summary>
         /// <param name="user">Thông tin người dùng cần đăng ký</param>
         /// <returns>True nếu đăng ký thành công, ngược lại là False</returns>
         Task<bool> RegisterUser(User user);
 
         /// <summary>
+        /// /// <summary>
         /// Đăng nhập vào hệ thống
         /// </summary>
+        /// /// <summary>
         /// <param name="username">Tên đăng nhập</param>
         /// <param name="password">Mật khẩu</param>
         /// <returns>Thông tin người dùng nếu đăng nhập thành công</returns>
