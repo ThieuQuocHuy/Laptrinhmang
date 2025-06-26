@@ -124,10 +124,6 @@ namespace daugia
 
         }
 
-        // Sự kiện khi form Login được load (không xử lý chức năng gì hiện tại)
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
