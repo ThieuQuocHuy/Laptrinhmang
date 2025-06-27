@@ -7,5 +7,5 @@ namespace Shared.Models
         public int UserId { get; set; }
         public decimal Amount { get; set; }
         public DateTime BidTime { get; set; }
-    }//..//////
+    }//..////////////
 }
