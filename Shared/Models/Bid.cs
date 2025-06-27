@@ -6,6 +6,6 @@ namespace Shared.Models
         public int AuctionId { get; set; }
         public int UserId { get; set; }
         public decimal Amount { get; set; }
-        public DateTime BidTime { get; set; }//..//
-    }
+        public DateTime BidTime { get; set; }
+    }//..//////
 }
