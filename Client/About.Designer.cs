@@ -54,9 +54,10 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(0, 27);
+            panel1.Location = new Point(0, 36);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 157);
+            panel1.Size = new Size(914, 209);
             panel1.TabIndex = 1;
             // 
             // label4
@@ -64,18 +65,19 @@
             label4.AutoSize = true;
             label4.BackColor = SystemColors.MenuHighlight;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label4.Location = new Point(421, 90);
+            label4.Location = new Point(481, 120);
             label4.Name = "label4";
-            label4.Size = new Size(128, 17);
+            label4.Size = new Size(167, 23);
             label4.TabIndex = 2;
             label4.Text = "thực hiện bởi nhóm 2";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.gioithieu;
-            pictureBox1.Location = new Point(29, 11);
+            pictureBox1.Location = new Point(33, 15);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(147, 127);
+            pictureBox1.Size = new Size(168, 169);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -85,9 +87,9 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.MenuHighlight;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(234, 48);
+            label1.Location = new Point(267, 64);
             label1.Name = "label1";
-            label1.Size = new Size(503, 32);
+            label1.Size = new Size(617, 41);
             label1.TabIndex = 0;
             label1.Text = "Chào mừng bạn đến với đấu giá biển số xe";
             // 
@@ -96,9 +98,10 @@
             panel2.BackColor = SystemColors.ActiveBorder;
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label2);
-            panel2.Location = new Point(0, 183);
+            panel2.Location = new Point(0, 244);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 265);
+            panel2.Size = new Size(914, 353);
             panel2.TabIndex = 2;
             // 
             // textBox1
@@ -106,11 +109,12 @@
             textBox1.BackColor = SystemColors.ActiveBorder;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(29, 57);
+            textBox1.Location = new Point(33, 76);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(721, 163);
+            textBox1.Size = new Size(824, 217);
             textBox1.TabIndex = 2;
             textBox1.Text = resources.GetString("textBox1.Text");
             textBox1.TextChanged += textBox1_TextChanged;
@@ -119,62 +123,65 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 16);
+            label2.Location = new Point(14, 21);
             label2.Name = "label2";
-            label2.Size = new Size(338, 23);
+            label2.Size = new Size(431, 30);
             label2.TabIndex = 0;
             label2.Text = "Giới Thiệu Ứng Dụng Đấu Giá Biển Số Xe";
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { trangChủToolStripMenuItem, lịchSửToolStripMenuItem, tàiKhoảnToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(914, 30);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
             // trangChủToolStripMenuItem
             // 
             trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
-            trangChủToolStripMenuItem.Size = new Size(71, 20);
+            trangChủToolStripMenuItem.Size = new Size(87, 24);
             trangChủToolStripMenuItem.Text = "Trang chủ";
             trangChủToolStripMenuItem.Click += trangChủToolStripMenuItem_Click;
             // 
             // lịchSửToolStripMenuItem
             // 
             lịchSửToolStripMenuItem.Name = "lịchSửToolStripMenuItem";
-            lịchSửToolStripMenuItem.Size = new Size(56, 20);
+            lịchSửToolStripMenuItem.Size = new Size(68, 24);
             lịchSửToolStripMenuItem.Text = "Lịch sử";
             // 
             // tàiKhoảnToolStripMenuItem
             // 
             tàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thôngTinTàiKhoảnToolStripMenuItem, logOutToolStripMenuItem });
             tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            tàiKhoảnToolStripMenuItem.Size = new Size(69, 20);
+            tàiKhoảnToolStripMenuItem.Size = new Size(85, 24);
             tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(180, 22);
+            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(220, 26);
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // logOutToolStripMenuItem
             // 
             logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            logOutToolStripMenuItem.Size = new Size(180, 22);
+            logOutToolStripMenuItem.Size = new Size(220, 26);
             logOutToolStripMenuItem.Text = "Log out";
             logOutToolStripMenuItem.Click += logOutToolStripMenuItem_Click;
             // 
             // About
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "About";
             Text = "Form1";
             panel1.ResumeLayout(false);
