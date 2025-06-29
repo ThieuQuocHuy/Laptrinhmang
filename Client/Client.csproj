@@ -32,4 +32,9 @@
 		<ProjectReference Include="..\Shared\Shared.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Properties\" />
+	  <Folder Include="Resources\" />
+	</ItemGroup>
+
 </Project>
