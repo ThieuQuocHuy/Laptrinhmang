@@ -4,9 +4,6 @@
     <Compile Update="About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AddAuctions.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="answer.cs">
       <SubType>Form</SubType>
     </Compile>
