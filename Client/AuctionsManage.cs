@@ -54,7 +54,7 @@ namespace Client
                 {
                     auctionItem = auctions[0];
                 }
-                if(auctions.Count > 0)
+                if (auctions.Count > 0)
                 {
                     txtBienso.Text = auctionItem.LicensePlateNumber;
                     txtGiaBD.Text = auctionItem.StartingPrice.ToString();
