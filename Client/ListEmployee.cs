@@ -38,14 +38,14 @@ namespace Client
             listEmployees = new List<Employee>();
 
             // Thêm các nhân viên vào danh sách.
-            listEmployees.Add(new Employee(1, " Nguyễn Thái Dương", "Nam", new DateTime(2004, 5, 1), "Hà Nội", 123456789));
-            listEmployees.Add(new Employee(2, " Nguyễn A", "Nữ", new DateTime(2003, 1, 12), "Hà Nội", 235127894));
-            listEmployees.Add(new Employee(3, " Nguyễn B", "Nữ", new DateTime(2003, 2, 3), "Đà Nẵng", 1223344552));
-            listEmployees.Add(new Employee(4, " Nguyễn C", "Nam", new DateTime(2002, 4, 20), "Hải Phòng", 034348201));
-            listEmployees.Add(new Employee(5, " Nguyễn D", "Nam", new DateTime(2004, 5, 13), "Nghệ An", 11111111));
-            listEmployees.Add(new Employee(6, " Nguyễn E", "Nam", new DateTime(2000, 2, 8), "Sài Gòn", 222222222));
-            listEmployees.Add(new Employee(7, " Nguyễn F", "Nữ", new DateTime(2004, 9, 3), "Phú Quốc", 333333333));
-            listEmployees.Add(new Employee(8, " Nguyễn G", "Nữ", new DateTime(2004, 12, 25), "Đăk Lăk", 444444444));
+            listEmployees.Add(new Employee(1, " Nguyễn Văn A", "Nam", new DateTime(2004, 5, 1), "Hà Nội", 123456789));
+            listEmployees.Add(new Employee(2, " Nguyễn Minh", "Nữ", new DateTime(2003, 1, 12), "Hà Nội", 235127894));
+            listEmployees.Add(new Employee(3, " Nguyễn Nam", "Nữ", new DateTime(2003, 2, 3), "Đà Nẵng", 1223344552));
+            listEmployees.Add(new Employee(4, " Trần Nhân", "Nam", new DateTime(2002, 4, 20), "Hải Phòng", 034348201));
+            listEmployees.Add(new Employee(5, " Nguyễn Ngọc", "Nam", new DateTime(2004, 5, 13), "Nghệ An", 11111111));
+            listEmployees.Add(new Employee(6, " Thái Học", "Nam", new DateTime(2000, 2, 8), "Sài Gòn", 222222222));
+            listEmployees.Add(new Employee(7, " Thái Duyên", "Nữ", new DateTime(2004, 9, 3), "Phú Quốc", 333333333));
+            listEmployees.Add(new Employee(8, " Hoài Như", "Nữ", new DateTime(2004, 12, 25), "Đăk Lăk", 444444444));
         }
     }
 }
