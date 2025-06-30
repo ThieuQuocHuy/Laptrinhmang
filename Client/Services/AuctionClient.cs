@@ -1,9 +1,7 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using Shared.Interfaces;
-using Shared.Models;
-using System.Net.Sockets;
-using System.Security.Cryptography;
+﻿using System.Net.Sockets;
 using System.Text.Json;
+using Shared.Models;
+using Shared.Interfaces;
 using System.Threading;
 
 namespace Client.Services
