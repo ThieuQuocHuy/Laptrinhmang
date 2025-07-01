@@ -58,10 +58,7 @@ namespace daugia
         private void panel8_Paint(object sender, PaintEventArgs e) { }
         private void label12_Click(object sender, EventArgs e) { }
         private void label19_Click(object sender, EventArgs e) { }
-        private void label18_Click(object sender, EventArgs e) { }
-        private void label22_Click(object sender, EventArgs e) { }
         private void label24_Click(object sender, EventArgs e) { }
-        private void label21_Click(object sender, EventArgs e) { }
         private void label26_Click(object sender, EventArgs e) { }
 
         /// <summary>
@@ -151,6 +148,26 @@ namespace daugia
             InformationUser informationUserForm = new InformationUser(_id);
             informationUserForm.Show();
             this.Hide(); // Ẩn form hiện tại.
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
