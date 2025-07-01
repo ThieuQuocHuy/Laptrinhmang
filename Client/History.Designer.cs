@@ -44,6 +44,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.ControlDark;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 1);
             panel1.Name = "panel1";
@@ -62,14 +63,14 @@
             // 
             // dataGridViewPaymentHistory
             // 
-            dataGridViewPaymentHistory.BackgroundColor = SystemColors.ActiveCaption;
             dataGridViewPaymentHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewPaymentHistory.Columns.AddRange(new DataGridViewColumn[] { id, history_username, history_license_plate, history_amount, payment_method, payment_time, status });
-            dataGridViewPaymentHistory.Location = new Point(0, 63);
+            dataGridViewPaymentHistory.Location = new Point(0, 45);
             dataGridViewPaymentHistory.Name = "dataGridViewPaymentHistory";
             dataGridViewPaymentHistory.RowHeadersWidth = 51;
-            dataGridViewPaymentHistory.Size = new Size(931, 390);
+            dataGridViewPaymentHistory.Size = new Size(934, 401);
             dataGridViewPaymentHistory.TabIndex = 1;
+            dataGridViewPaymentHistory.CellContentClick += dataGridViewPaymentHistory_CellContentClick;
             // 
             // id
             // 
@@ -131,7 +132,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(935, 450);
             Controls.Add(dataGridViewPaymentHistory);
             Controls.Add(panel1);

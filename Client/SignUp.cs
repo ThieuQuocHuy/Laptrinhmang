@@ -115,5 +115,13 @@ namespace daugia
                 MessageBox.Show($"Lỗi khi đăng ký: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // Sự kiện khi click vào nút "Đăng Nhập", mở form SignIn
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login signInForm = new Login();
+            signInForm.Show(); // Hiển thị form nhập
+            this.Close();      // Đóng form đăng Ký
+        }
     }
 }

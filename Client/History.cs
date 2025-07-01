@@ -34,5 +34,10 @@ namespace Client
 
             dataGridViewPaymentHistory.DataSource = paymentHistory;
         }
+
+        private void dataGridViewPaymentHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

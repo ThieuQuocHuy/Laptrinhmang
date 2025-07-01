@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -43,7 +44,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ControlLightLight;
-            pictureBox1.Image = Client.Properties.Resources.download;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(-1, -3);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
@@ -123,10 +124,10 @@
             button2.BackColor = SystemColors.ActiveCaptionText;
             button2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(763, 16);
+            button2.Location = new Point(749, 16);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(82, 44);
+            button2.Size = new Size(96, 44);
             button2.TabIndex = 8;
             button2.Text = "Sign Up";
             button2.UseVisualStyleBackColor = false;

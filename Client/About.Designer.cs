@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.MenuHighlight;
+            panel1.BackColor = SystemColors.ActiveBorder;
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
@@ -63,13 +63,13 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.MenuHighlight;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label4.BackColor = SystemColors.ActiveBorder;
+            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label4.Location = new Point(481, 120);
             label4.Name = "label4";
-            label4.Size = new Size(167, 23);
+            label4.Size = new Size(186, 23);
             label4.TabIndex = 2;
-            label4.Text = "thực hiện bởi nhóm 2";
+            label4.Text = "Thực hiện bởi nhóm 7";
             // 
             // pictureBox1
             // 
@@ -81,11 +81,12 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.MenuHighlight;
+            label1.BackColor = SystemColors.ActiveBorder;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(267, 64);
             label1.Name = "label1";
@@ -95,7 +96,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ActiveBorder;
+            panel2.BackColor = SystemColors.Control;
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label2);
             panel2.Location = new Point(0, 244);
@@ -103,10 +104,11 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(914, 353);
             panel2.TabIndex = 2;
+            panel2.Paint += panel2_Paint;
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.ActiveBorder;
+            textBox1.BackColor = SystemColors.Control;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(33, 76);
@@ -114,7 +116,7 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(824, 217);
+            textBox1.Size = new Size(824, 228);
             textBox1.TabIndex = 2;
             textBox1.Text = resources.GetString("textBox1.Text");
             textBox1.TextChanged += textBox1_TextChanged;

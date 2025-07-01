@@ -60,5 +60,15 @@ namespace Client
             loginForm.Show(); // Hiển thị form đăng nhập
             this.Close(); // Đóng form hiện tại (form 'About')
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

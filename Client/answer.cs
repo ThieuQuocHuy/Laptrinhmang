@@ -71,6 +71,11 @@ namespace Client
             loginForm.Show(); // Hiển thị form đăng nhập
             this.Close(); // Đóng form hiện tại (form 'answer')
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
     

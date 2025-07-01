@@ -46,9 +46,11 @@
             textBox2 = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -97,7 +99,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ControlDark;
+            panel1.BackColor = SystemColors.Control;
             panel1.BackgroundImageLayout = ImageLayout.None;
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label4);
@@ -112,10 +114,12 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(914, 595);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.HotTrack;
+            panel2.BackColor = SystemColors.ActiveBorder;
+            panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label6);
             panel2.Location = new Point(0, 4);
@@ -143,7 +147,7 @@
             label6.Name = "label6";
             label6.Size = new Size(70, 23);
             label6.TabIndex = 9;
-            label6.Text = "Nhóm 2";
+            label6.Text = "Nhóm 7";
             // 
             // label4
             // 
@@ -158,7 +162,7 @@
             // 
             // textBox3
             // 
-            textBox3.BackColor = SystemColors.ControlDark;
+            textBox3.BackColor = SystemColors.Control;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox3.Location = new Point(31, 491);
@@ -183,7 +187,7 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.ControlDark;
+            textBox1.BackColor = SystemColors.Control;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(31, 367);
@@ -197,7 +201,7 @@
             // 
             // textBox2
             // 
-            textBox2.BackColor = SystemColors.ControlDark;
+            textBox2.BackColor = SystemColors.Control;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.Location = new Point(31, 244);
@@ -230,6 +234,17 @@
             label1.TabIndex = 0;
             label1.Text = "Các câu hỏi thường gặp :";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(60, 3);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(168, 114);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // answer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -247,6 +262,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -270,5 +286,6 @@
         private Label label5;
         private Panel panel2;
         private Label label6;
+        private PictureBox pictureBox1;
     }
 }
