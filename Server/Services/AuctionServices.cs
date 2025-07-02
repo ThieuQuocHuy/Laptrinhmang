@@ -26,6 +26,9 @@ namespace Server.Services
 
         public async Task<List<Auction>> GetActiveAuctions()
         {
+            // Cập nhật winner_id và status cho các phiên đã hết hạn trước khi lấy danh sách
+            await _dbContext.CheckAndEndAuctions();
+
             var auctions = new List<Auction>();
             using var conn = _dbContext.GetConnection();
             await conn.OpenAsync();
