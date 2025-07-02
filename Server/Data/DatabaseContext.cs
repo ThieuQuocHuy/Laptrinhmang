@@ -21,7 +21,7 @@ namespace Server.Data
         public DatabaseContext()
         {
             _connectionString = Environment.GetEnvironmentVariable("DATABASE_URL") ??
-                              "server=localhost;database=auction_db;user=root;password=huythieu520";
+                              "server=localhost;database=auction_db;user=root";
 
         }
 
