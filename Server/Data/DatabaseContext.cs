@@ -240,5 +240,62 @@ namespace Server.Data
             return dataTable;
         }
 
+        public async Task EndAuctionAndSetWinner(int auctionId)
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            // Tìm user có bid cao nhất cho auction này
+            string getWinnerQuery = @"
+                SELECT user_id
+                FROM bids
+                WHERE auction_id = @auctionId
+                ORDER BY amount DESC, bid_time ASC
+                LIMIT 1;
+            ";
+
+            int? winnerId = null;
+            using (var cmd = new MySqlCommand(getWinnerQuery, conn))
+            {
+                cmd.Parameters.AddWithValue("@auctionId", auctionId);
+                var result = await cmd.ExecuteScalarAsync();
+                if (result != null && result != DBNull.Value)
+                    winnerId = Convert.ToInt32(result);
+            }
+
+            // Cập nhật winner_id và status cho auction
+            string updateAuctionQuery = @"
+                UPDATE auctions
+                SET winner_id = @winnerId, status = 'Ended'
+                WHERE id = @auctionId;
+            ";
+
+            using (var cmd = new MySqlCommand(updateAuctionQuery, conn))
+            {
+                cmd.Parameters.AddWithValue("@winnerId", (object?)winnerId ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@auctionId", auctionId);
+                await cmd.ExecuteNonQueryAsync();
+            }
+        }
+
+        public async Task CheckAndEndAuctions()
+        {
+            using var conn = GetConnection();
+            await conn.OpenAsync();
+
+            string query = "SELECT id FROM auctions WHERE end_time <= NOW() AND status = 'Active'";
+            using var cmd = new MySqlCommand(query, conn);
+            using var reader = await cmd.ExecuteReaderAsync();
+            var endedAuctionIds = new List<int>();
+            while (await reader.ReadAsync())
+            {
+                endedAuctionIds.Add(reader.GetInt32("id"));
+            }
+
+            foreach (var auctionId in endedAuctionIds)
+            {
+                await EndAuctionAndSetWinner(auctionId);
+            }
+        }
     }
 }
