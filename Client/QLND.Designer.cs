@@ -90,7 +90,7 @@
             label2.Name = "label2";
             label2.Size = new Size(83, 28);
             label2.TabIndex = 2;
-            label2.Text = "Nhóm 2";
+            label2.Text = "Nhóm 7";
             // 
             // label1
             // 
